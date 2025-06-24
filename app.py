@@ -63,7 +63,7 @@ def get_text_chunks(text):
     return text_splitter.split_text(text)
 
 # --- THE "TWO-BRAIN" CORE LOGIC ---
-@st.cache_resource
+@st.experimental_singleton
 def load_guideline_db():
     """Loads the persistent guideline vector database from disk."""
     if not os.path.exists(GUIDELINE_DB_PATH):
