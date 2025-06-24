@@ -12,4 +12,4 @@ sentence-transformers==2.7.0
 python-dotenv==1.0.1
 accelerate==0.30.1
 bitsandbytes==0.43.1
-torch==2.3.0
+torch
